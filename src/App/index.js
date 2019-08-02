@@ -1,18 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
-import './App.css';
+import React from "react";
 
-
-const MyButton = styled.div`
-color: white;
-`
+import AppLayout from "./AppLayout";
+import AppBar from "./AppBar";
+import "./App.css";
 
 function App() {
   return (
-  
-      <MyButton>Hello World</MyButton>
-     
-   
+    <AppLayout>
+      <AppBar/>
+      <div>Welcome to Cryptodash</div>
+    </AppLayout>
   );
 }
 
