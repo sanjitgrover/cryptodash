@@ -4,13 +4,14 @@ import AppLayout from "./AppLayout";
 import AppBar from "./AppBar";
 import { AppProvider } from "./AppProvider";
 import "./App.css";
+import Settings from "../Settings";
 
 function App() {
   return (
     <AppProvider>
       <AppLayout>
         <AppBar />
-        <div>Welcome to Cryptodash</div>
+        <Settings />
       </AppLayout>
     </AppProvider>
   );
