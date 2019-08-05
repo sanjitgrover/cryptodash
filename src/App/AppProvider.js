@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-const cc = require("cryptocompare");
+const cc = require("cryptocompare")
 export const AppContext = React.createContext();
 
 export class AppProvider extends Component {
