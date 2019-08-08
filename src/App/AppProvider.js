@@ -35,7 +35,8 @@ export class AppProvider extends Component {
       return;
     }
     let prices = await this.prices();
-    console.log("prices", prices);
+    prices=prices.filter(price=>Object.keys(price).length);
+    //console.log("prices", prices);
     this.setState({prices});
   }
 
